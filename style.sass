@@ -2,9 +2,19 @@
   margin: 0
   padding: 0
   font-family: 'PT Sans', sans-serif
+summary,details,input,text
+  outline: 0
+  outline-offset: 0
+summary
+  cursor: pointer
 a
   text-decoration: none
   cursor: pointer
+.zoom-img:hover
+  transform: scale(1.2)
+
+.active-button:hover
+  box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45)
 .container
   width: 278px
   margin: 0 auto
@@ -45,6 +55,7 @@ a
       line-height: 38px
       color: #000000
       text-align: left
+      margin-left: 20px
 
     &_h3
       font-size: 24px
@@ -91,6 +102,8 @@ a
     color: #000000
     margin-bottom: 20px
 .step
+  margin-left: 20px
+  margin-right: 20px
 
 .step-block img
   width: 277px
@@ -123,6 +136,8 @@ a
     padding-top: 23px
     padding-bottom: 9px
     font-weight: 600
+  &__link:first-child
+    margin-left: 20px
 
 .call-back
   background: #008DCD
@@ -173,9 +188,215 @@ a
       font-weight: 600
       cursor: pointer
       margin-bottom: 10px
+.reviews
+  padding-left: 20px
+  padding-right: 20px
+
+  &__header
+    font-size: 28px
+    line-height: 34px
+    color: #000000
+    text-transform: uppercase
+    padding-left: 20px
+    padding-right: 20px
+    margin-bottom: 25px
+    margin-top: 21px
+
+  &__content
+    display: flex
+    align-items: center
+    margin: 0 auto
+
+
+  &__slash
+
+.reviews-block
+  margin-left: 20px
+  margin-left: 20px
+  &__face
+    display: flex
+
+    &_main
+
+    &_img
+      width: 87px
+      height: 87px
+      margin-right: 15px
+
+    &_work
+      font-size: 18px
+      line-height: 22px
+      color: #000000
+    &_name
+      font-size: 26px
+      line-height: 31px
+      color: #000000
+
+    &_parcel
+      font-size: 10px
+      line-height: 12px
+      color: #000000
+
+  &__content
+    margin-top: 20px
+    margin-bottom: 20px
+
+    &_text
+
+      font-size: 12px
+      line-height: 14px
+      color: #000000
+.angel
+  color: #C4C4C4
+  font-size: 25px
+  font-weight: 600
+  .active-slash:hover
+    color: #008DCD
+.advantages
+  background-color: #F7F7F7
+  padding-left: 20px
+  padding-right: 20px
+
+  &__header
+    font-size: 28px
+    line-height: 34px
+    color: #000000
+    padding-top: 25px
+  &__main
+    display: flex
+    flex-wrap: wrap
+    margin: 0 auto
+    align-items: center
+    justify-content: space-between
+    padding-top: 15px
+  &__block
+    text-align: center
+    width: 26vw
+    height: 27vh
+    align-items: center
+
+    &_img
+      width: 50px
+      height: 49px
+      padding: 19px
+      background-color: #FFFFFF
+      border: 1px solid #FFFFFF
+      border-radius: 50%
+    &_p
+      text-align: center
+      font-size: 10px
+      line-height: 12px
+      text-align: center
+      color: #000000
+
+.hide
+  display: none
+.guarantees
+  background-color: #FFFFFF
+  margin: 0 auto
+  padding: 27px 21px 21px 21px
+  &__header
+    font-size: 28px
+    line-height: 34px
+    color: #000000
+    margin-bottom: 18px
+
+  &__nav
+
+    &_slider
+      margin-left: 7px
+      margin-right: 7px
+
+    &_img
+      width: 48px
+      height: 48px
+      padding: 19px
+      background-color: #F7F7F7
+      border-radius: 50%
+
+    &_h4
+      font-size: 16px
+      line-height: 19px
+      color: #000000
+
+
+  &__content
+
+    &_p
+      font-size: 12px
+      line-height: 14px
+      color: #000000
+      margin-top: 15px
+      margin-bottom: 15px
+    &_button
+      display: block
+      width: 230px
+      height: 48px
+      font-size: 16px
+      line-height: 48px
+      align-items: center
+      text-align: center
+      text-transform: uppercase
+      color: #FFFFFF
+      background-color: #008DCD
+      border-radius: 30px
+.fast-answer
+  background: #D2ECF7
+  padding-bottom: 20px
+
+  &__header
+    font-size: 28px
+    line-height: 34px
+    color: #000000
+    padding-top: 20px
+    margin-left: 20px
+    margin-right: 20px
+  &__left
+  &__right
+  &__list
+    list-style-type: none
+  &__link
+    align-items: center
+    font-size: 14px
+    min-height: 58px
+    line-height: 17px
+    color: #000000
+    background: #FFFFFF
+    border-radius: 32px
+    padding: 9px
+    margin-top: 10px
+    margin-bottom: 10px
+    &_p
+      margin-top: 10px
+details summary::-webkit-details-marker
+  display: none
+
+.delivery-company
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-top: 18px
+  margin-bottom: 18px
+
+  &__all
+
+  &__list
+    list-style-type: none
+    display: flex
+  &__link
+    margin: 3px 0px
+    &_img
+      width: 66px
+      height: 42px
+
+
+
+
 
 
 @media screen and (max-width: 321px)
+  .hide
+    display: block
   .header
     background-image: url("img/back-header-mini.jpg")
     background-repeat: no-repeat
@@ -185,6 +406,29 @@ a
       display: block
     &__nav
       display: none
+  .flash
+    display: none
+  .guarantees__nav
+    display: flex
+    align-items: center
+    justify-content: space-between
+  .guarantees__nav_slider
+    display: flex
+    align-items: center
+
+  .guarantees__nav_h4
+    padding-left: 15px
+  .guarantees__content
+    margin-left: 26px
+    margin-right: 26px
+  .fast-answer__block
+    margin-left: 20px
+    margin-right: 20px
+  .delivery-company
+    margin-left: 20px
+    margin-right: 20px
+
+
 
 
 
@@ -194,12 +438,15 @@ a
   .container
     width: 100vw
     margin: 0 auto
+  .nav-main
+    margin: 0 auto
   .header
     background-image: url("img/back-header-768.jpg")
     background-repeat: no-repeat
     background-size: contain
     height: 415px
     position: relative
+    width: 100vw
     &__list
       margin-top: 38px
       justify-content: space-around
@@ -209,8 +456,6 @@ a
         margin-right: 24px
         color: #fff
     &__nav
-      margin-left: 141px
-
     &__list
       width: 100%
       margin-top: 41px
@@ -223,16 +468,16 @@ a
       text-align: left
       &_h2
         font-size: 22rem
-        color: #FFFFFF
         width: 400px
+        color: #FFFFFF
         text-align: left
         margin-bottom: 18px
 
       &_h3
         font-size: 14rem
         margin-top: 17px
-        color: #FFFFFF
         width: 302px
+        color: #FFFFFF
         text-align: left
         margin-bottom: 36px
 
@@ -245,7 +490,7 @@ a
       justify-content: space-between
 
     &__list img
-      width: 398px
+      width: 325px
     &__list li:last-of-type
       margin-left: 34px
       order: 1
@@ -255,25 +500,23 @@ a
     &__h3
       font-size: 18rem
       align-items: center
-      color: #000000
       position: absolute
       top: -60px
 
     &__p
       text-align: left
       font-size: 7rem
-      color: #000000
       width: 280px
       margin-bottom: 30px
   .step
-    margin-left: 74px
+    margin: 0 5%
     display: flex
     flex-wrap: wrap
     justify-content: space-between
   .step-block img
     width: 280px
   .marg74
-    margin-right: 54px
+    //margin-right: 54px
 
   .step-block
     margin-top: 34px
@@ -285,14 +528,13 @@ a
       margin-bottom: 8px
       font-size: 18rem
       line-height: 31px
-      color: #000000
 
     &__p
       font-size: 8rem
-      color: #000000
 
   .text-block
     height: 124px
+    margin-top: 51px
 
     &__list
       padding-bottom: 38px
@@ -304,8 +546,6 @@ a
       width: 375px
       font-size: 14rem
       line-height: 34px
-      color: #000000
-      font-weight: 600
       margin-left: 34px
 
   .call-back
@@ -345,8 +585,178 @@ a
         font-weight: 600
         cursor: pointer
         margin-bottom: 10px
+  .reviews
+    padding-left: 34px
+    padding-right: 34px
+
+    &__header
+
+      font-size: 18rem
+      line-height: 43px
+      color: #000000
+      text-transform: uppercase
+      padding-left: 34px
+      padding-right: 34px
+      margin-bottom: 26px
+      margin-top: 51px
+
+    &__content
+      display: flex
+      align-items: center
+      margin: 0 auto
 
 
+    &__slash
+
+  .reviews-block
+    margin-left: 34px
+    margin-right: 34px
+    &__face
+      display: flex
+
+      &_main
+
+      &_img
+        width: 87px
+        height: 87px
+        margin-right: 15px
+
+      &_work
+        font-size: 9rem
+        line-height: 22px
+        color: #000000
+      &_name
+        font-size: 13rem
+        line-height: 31px
+        color: #000000
+
+      &_parcel
+        font-size: 5rem
+        line-height: 12px
+        color: #000000
+
+    &__content
+      margin-top: 20px
+
+      &_text
+
+        font-size: 7rem
+        line-height: 17px
+        color: #000000
+  .advantages
+
+    padding-left: 20px
+    padding-right: 20px
+
+    &__header
+      font-size: 18rem
+      line-height: 43px
+
+      padding-top: 25px
+      padding-left: 34px
+    &__main
+      display: flex
+      align-items: center
+      justify-content: space-around
+      padding: 23px 34px 110px 34px
+    &__block
+      text-align: center
+      width: 11vw
+      height: 23vh
+      align-items: center
+
+      &_img
+        width: 50px
+        height: 49px
+        padding: 19px
+        border-radius: 50%
+      &_p
+        text-align: center
+        font-size: 6rem
+        line-height: 14px
+        text-align: center
+        color: #000000
+  .guarantees
+    padding: 47px 32px 47px 32px
+    &__header
+      font-size: 18rem
+      line-height: 43px
+      margin-bottom: 20px
+    &__global
+      display: flex
+      justify-content: space-between
+    &__block
+      width: 30vw
+
+
+    &__nav
+      &_slider
+      &_img
+        width: 48px
+        height: 48px
+        padding: 19px
+
+      &_h4
+        font-size: 9rem
+        line-height: 24px
+    &__content
+
+      &_p
+        font-size: 6rem
+        line-height: 14px
+        margin-top: 15px
+        margin-bottom: 31px
+        height: 41rem
+      &_button
+        width: 220px
+        height: 48px
+        font-size: 16px
+        line-height: 48px
+  .marg
+    margin: 0px 20px 0px 20px
+  .fast-answer
+    padding-bottom: 39px
+
+    &__header
+      font-size: 18rem
+      line-height: 43px
+      padding-top: 41px
+      margin-left: 35px
+      margin-right: 35px
+    &__block
+      margin-left: 35px
+      margin-right: 35px
+    &__left
+    &__right
+    &__list
+      list-style-type: none
+    &__link
+      font-size: 8rem
+      min-height: 48px
+      line-height: 19px
+      border-radius: 200px
+      padding: 9px 25px
+      margin-top: 10px
+      margin-bottom: 10px
+      &_p
+        margin-top: 20px
+
+  .delivery-company
+    display: flex
+    align-items: center
+    justify-content: space-around
+    margin: 39px 35px
+
+    &__all
+      display: flex
+    &__list
+      list-style-type: none
+      display: flex
+    &__link
+      margin: 3px 0px
+      &_img
+        width: 66px
+        height: 42px
 
 
 
@@ -355,10 +765,12 @@ a
     width: 100vw
   html
     font-size: 2px
+  .nav-main
+    margin: 0 auto
   .header
     background-image: url("img/back-header-big.jpg")
     background-repeat: no-repeat
-    background-size: contain
+    background-size: cover
     width: 100vw
     height: 525px
     position: relative
@@ -377,8 +789,7 @@ a
         margin-right: 24px
         color: #fff
     &__nav
-      margin-left: 141px
-      margin-right: 141px
+
     &__list
       width: 100%
       margin-top: 41px
@@ -445,16 +856,22 @@ a
       color: #000000
       width: 280px
   .step
-    margin-left: 140px
+    margin: 68px 7% 36px
     display: flex
     flex-wrap: wrap
     justify-content: space-between
-    margin-top: 68px
-    margin-bottom: 36px
+
+  .angel
+    color: #C4C4C4
+    font-size: 30px
+    font-weight: 600
+  .active-slash:hover
+    color: #008DCD
+
   .step-block img
     width: 462px
   .marg74
-    margin-right: 204px
+    //margin-right: 204px
 
   .step-block
     margin-top: 18px
@@ -532,6 +949,572 @@ a
         font-weight: 600
         cursor: pointer
         margin-bottom: 10px
+
+  .reviews
+    padding-left: 140px
+    padding-right: 140px
+
+    &__header
+      font-size: 18rem
+      line-height: 43px
+      color: #000000
+      text-transform: uppercase
+      padding-left: 140px
+      padding-right: 140px
+      margin-bottom: 46px
+      margin-top: 69px
+
+    &__content
+      display: flex
+      align-items: center
+      margin: 0 auto
+
+
+    &__slash
+
+  .reviews-block
+    margin-left: 80px
+    margin-right: 80px
+    &__face
+      display: flex
+
+      &_main
+
+      &_img
+        width: 119px
+        height: 119px
+        margin-right: 35px
+
+      &_work
+        font-size: 10rem
+        line-height: 24px
+        color: #000000
+      &_name
+        font-size: 13rem
+        line-height: 43px
+        color: #000000
+
+      &_parcel
+        font-size: 8rem
+        line-height: 19px
+        color: #000000
+
+    &__content
+      margin-top: 20px
+
+      &_text
+
+        font-size: 8rem
+        line-height: 19px
+        color: #000000
+  .advantages
+    background-color: #F7F7F7
+    padding-left: 20px
+    padding-right: 20px
+
+    &__header
+      font-size: 18rem
+      line-height: 43px
+      color: #000000
+      padding-top: 101px
+      padding-left: 140px
+    &__main
+      display: flex
+      margin: 0 auto
+      align-items: center
+      justify-content: space-around
+      padding: 28px 140px 161px 125px
+    &__block
+      text-align: center
+      width: 11vw
+      height: 23vh
+      align-items: center
+
+      &_img
+        width: 84px
+        height: 84px
+        padding: 27px
+        background-color: #FFFFFF
+        border: 1px solid #FFFFFF
+        border-radius: 50%
+      &_p
+        text-align: center
+        font-size: 9rem
+        line-height: 22px
+        text-align: center
+        color: #000000
+  .guarantees
+    padding: 21vh 9vw 20vh 9vw
+    &__header
+      font-size: 18rem
+      line-height: 43px
+      margin-bottom: 30px
+    &__global
+      display: flex
+      justify-content: space-between
+    &__block
+      width: 30vw
+
+
+    &__nav
+      &_slider
+      &_img
+        width: 75px
+        height: 70px
+        padding: 19px
+      &_h4
+        font-size: 15rem
+        line-height: 36px
+    &__content
+
+      &_p
+        font-size: 8rem
+        line-height: 19px
+        margin-top: 15px
+        margin-bottom: 31px
+        height: 41rem
+      &_button
+        width: 360px
+        height: 48px
+        font-size: 8rem
+        line-height: 48px
+  .marg
+    margin: 0px 40px 0px 40px
+  .fast-answer
+    padding-bottom: 44px
+
+    &__header
+      font-size: 18rem
+      line-height: 43px
+      padding-top: 64px
+      margin-left: 140px
+      margin-right: 140px
+    &__block
+      display: flex
+      justify-content: space-between
+      width: 100vw
+      margin-top: 24px
+
+    &__left
+      margin-left: 140px
+      margin-right: 15px
+      width: 40vw
+
+    &__right
+      margin-right: 140px
+      margin-left: 15px
+      width: 40vw
+    &__list
+      list-style-type: none
+
+    &__link
+      font-size: 8rem
+      min-height: 64px
+      line-height: 19px
+      border-radius: 200px
+      padding: 9px 25px
+      margin-top: 10px
+      margin-bottom: 10px
+      &_p
+        margin-top: 20px
+  .delivery-company
+    display: flex
+    align-items: center
+    justify-content: space-around
+    margin: 59px 142px
+
+    &__all
+      display: flex
+    &__list
+      list-style-type: none
+      display: flex
+    &__link
+      margin: 3px 0px
+      &_img
+        margin-left: 16px
+        margin-right: 16px
+        width: 94px
+        height: 60px
+
+
+@media screen and (min-width: 1441px)
+  .container
+    width: 100vw
+  html
+    font-size: 2px
+  .nav-main
+    margin: 0 auto
+
+  .header
+    margin: 0 auto
+    background-image: url("img/back-header-big.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    width: 100%
+    height: 525px
+    position: relative
+    &__logo
+      margin-left: 140px
+      margin-top: 29px
+      &_link
+        width: 160px
+        height: 46px
+    &__list
+      margin-top: 41px
+      justify-content: space-around
+      &_link
+        font-size: 6rem
+        line-height: 16.8px
+        margin-right: 24px
+        color: #fff
+    &__nav
+
+    &__list
+      width: 100%
+      margin-top: 41px
+
+      &_link
+        font-size: 8rem
+        line-height: 16.8px
+        margin-right: 60px
+        color: #FFFFFF
+  .content
+
+
+    &__section
+      position: absolute
+      top: 163px
+      margin-left: 140px
+      text-align: left
+      &_h2
+        font-size: 22rem
+        color: #FFFFFF
+        width: 750px
+        text-align: left
+        margin-bottom: 22px
+
+      &_h3
+        font-size: 14rem
+        color: #FFFFFF
+        width: 302px
+        text-align: left
+        margin-bottom: 36px
+
+      &_button
+        font-size: 8rem
+        line-height: 48px
+        height: 48px
+        width: 360px
+        text-align: center
+        text-transform: uppercase
+
+  .delivery
+    margin-top: 25px
+    &__list
+      display: flex
+      justify-content: space-between
+
+    &__list img
+      width: 660px
+    &__list li:last-of-type
+      margin-left: 140px
+      justify-content: left
+      order: 1
+    &__list li:first-child
+
+      order: 2
+
+    &__h3
+      font-size: 18rem
+      text-align: left
+      color: #000000
+
+    &__p
+      text-align: left
+      font-size: 7rem
+      color: #000000
+      width: 280px
+  .step
+    .step
+    margin: 68px 7% 36px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  .step-block img
+    width: 462px
+  .step-block img
+    width: 462px
+  .marg74
+    //margin-right: 204px
+
+  .step-block
+    margin-top: 18px
+    margin-bottom: 18px
+    width: 462px
+
+    &__h4
+      margin-top: 41px
+      margin-bottom: 9px
+      font-size: 15rem
+      line-height: 36px
+      color: #000000
+      font-weight: 600
+
+    &__p
+      font-size: 10rem
+      line-height: 24px
+      color: #000000
+  .text-block
+    height: 180px
+
+    &__list
+      padding-bottom: 38px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      height: 100%
+
+    &__link
+      font-size: 14rem
+      line-height: 34px
+      color: #000000
+      font-weight: 600
+      margin-left: 140px
+      margin-bottom: 14px
+    &__list li:last-of-type
+      margin-right: 140px
+
+  .call-back
+
+    &__list
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-left: 140px
+      margin-right: 140px
+    &__link
+      &_h2
+        padding-top: 70px
+        margin-bottom: 19px
+        line-height: 58px
+        font-size: 24rem
+
+      &_p
+        font-size: 12rem
+        margin-bottom: 77px
+    &__input-form
+      width: 360px
+      padding-top: 25px
+
+      &_tel
+        font-size: 8rem
+        width: 360px
+        height: 48px
+        padding-left: 10px
+        padding-right: 10px
+        margin-bottom: 10px
+
+      &_submit
+        font-size: 16px
+        line-height: 48px
+        width: 360px
+        height: 48px
+        border-radius: 30px
+        font-weight: 600
+        cursor: pointer
+        margin-bottom: 10px
+  .reviews
+    padding-left: 140px
+    padding-right: 140px
+
+    &__header
+      font-size: 18rem
+      line-height: 43px
+      color: #000000
+      text-transform: uppercase
+      padding-left: 140px
+      padding-right: 140px
+      margin-bottom: 46px
+      margin-top: 69px
+
+    &__content
+      display: flex
+      align-items: center
+      margin: 0 auto
+
+
+    &__slash
+      width: 20px
+      height: 40px
+  .angel
+    color: #C4C4C4
+    font-size: 40px
+    font-weight: 600
+  .active-slash:hover
+    color: #008DCD
+
+  .reviews-block
+    margin-left: 80px
+    margin-right: 80px
+    &__face
+      display: flex
+
+      &_main
+
+      &_img
+        width: 119px
+        height: 119px
+        margin-right: 35px
+
+      &_work
+        font-size: 10rem
+        line-height: 24px
+        color: #000000
+      &_name
+        font-size: 13rem
+        line-height: 43px
+        color: #000000
+
+      &_parcel
+        font-size: 8rem
+        line-height: 19px
+        color: #000000
+
+    &__content
+      margin-top: 20px
+
+      &_text
+
+        font-size: 8rem
+        line-height: 19px
+        color: #000000
+  .advantages
+    background-color: #F7F7F7
+    padding-left: 20px
+    padding-right: 20px
+
+    &__header
+      font-size: 18rem
+      line-height: 43px
+      color: #000000
+      padding-top: 101px
+      padding-left: 140px
+    &__main
+      display: flex
+      margin: 0 auto
+      align-items: center
+      justify-content: space-around
+      padding: 28px 140px 161px 125px
+    &__block
+      text-align: center
+      width: 11vw
+      height: 23vh
+      align-items: center
+
+      &_img
+        width: 84px
+        height: 84px
+        padding: 27px
+        background-color: #FFFFFF
+        border: 1px solid #FFFFFF
+        border-radius: 50%
+      &_p
+        text-align: center
+        font-size: 9rem
+        line-height: 22px
+        text-align: center
+        color: #000000
+  .guarantees
+    padding: 21vh 9vw 20vh 9vw
+    &__header
+      font-size: 18rem
+      line-height: 43px
+      margin-bottom: 30px
+    &__global
+      display: flex
+      justify-content: space-between
+    &__block
+      width: 30vw
+
+
+    &__nav
+      &_slider
+      &_img
+        width: 75px
+        height: 70px
+        padding: 19px
+      &_h4
+        font-size: 15rem
+        line-height: 36px
+    &__content
+
+      &_p
+        font-size: 8rem
+        line-height: 19px
+        margin-top: 15px
+        margin-bottom: 31px
+        height: 41rem
+      &_button
+        width: 360px
+        height: 48px
+        font-size: 8rem
+        line-height: 48px
+  .marg
+    margin: 0px 40px 0px 40px
+  .fast-answer
+    padding-bottom: 44px
+    &__header
+      font-size: 18rem
+      line-height: 43px
+      padding-top: 64px
+      margin-left: 140px
+      margin-right: 140px
+    &__block
+      display: flex
+      justify-content: space-between
+      width: 100vw
+      margin-top: 24px
+
+    &__left
+      margin-left: 140px
+      margin-right: 15px
+      width: 40vw
+
+    &__right
+      margin-right: 140px
+      margin-left: 15px
+      width: 40vw
+    &__list
+      list-style-type: none
+
+    &__link
+      font-size: 8rem
+      min-height: 64px
+      line-height: 19px
+      border-radius: 200px
+      padding: 9px 25px
+      margin-top: 10px
+      margin-bottom: 10px
+      &_p
+        margin-top: 20px
+  .delivery-company
+    display: flex
+    align-items: center
+    justify-content: space-around
+    margin: 59px 142px
+
+    &__all
+      display: flex
+    &__list
+      list-style-type: none
+      display: flex
+    &__link
+      margin: 3px 0px
+      &_img
+        margin-left: 16px
+        margin-right: 16px
+        width: 94px
+        height: 60px
 
 
 
