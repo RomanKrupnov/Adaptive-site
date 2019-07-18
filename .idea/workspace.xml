@@ -14,14 +14,19 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5394191">
+    <splitter split-orientation="horizontal" split-proportion="0.53775936">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="83" column="32" lean-forward="true" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="32" />
+                <state relative-caret-position="382">
+                  <caret line="335" column="27" lean-forward="true" selection-start-line="335" selection-start-column="27" selection-end-line="335" selection-end-column="27" />
+                  <folding>
+                    <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#6;n#content#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#6;n#content#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#6;n#content#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -33,8 +38,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="141">
-                  <caret line="514" column="18" lean-forward="true" selection-start-line="514" selection-start-column="18" selection-end-line="514" selection-end-column="18" />
+                <state relative-caret-position="302">
+                  <caret line="915" column="20" lean-forward="true" selection-start-line="915" selection-start-column="20" selection-end-line="915" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#25649#34353#0" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -48,6 +56,16 @@
       <find>center</find>
       <find>7px</find>
       <find>141</find>
+      <find>nav</find>
+      <find>margin-left: 20px</find>
+      <find>_tel</find>
+      <find>border-bottom</find>
+      <find>nav-main</find>
+      <find>заказать</find>
+      <find>angel</find>
+      <find>отправить по</find>
+      <find>button</find>
+      <find>num</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -69,6 +87,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -80,7 +99,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -115,11 +133,16 @@
       <workItem from="1562868178184" duration="784000" />
       <workItem from="1562869337293" duration="4437000" />
       <workItem from="1562907077882" duration="29917000" />
+      <workItem from="1563282612838" duration="21996000" />
+      <workItem from="1563342738021" duration="21315000" />
+      <workItem from="1563370793471" duration="743000" />
+      <workItem from="1563372392831" duration="8506000" />
+      <workItem from="1563431732791" duration="13203000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45468000" />
+    <option name="totallyTimeSpent" value="111231000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -156,17 +179,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/style.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="83" column="32" lean-forward="true" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="32" />
+        <state relative-caret-position="302">
+          <caret line="915" column="20" lean-forward="true" selection-start-line="915" selection-start-column="20" selection-end-line="915" selection-end-column="20" />
+          <folding>
+            <element signature="e#25649#34353#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.sass">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="514" column="18" lean-forward="true" selection-start-line="514" selection-start-column="18" selection-end-line="514" selection-end-column="18" />
+        <state relative-caret-position="382">
+          <caret line="335" column="27" lean-forward="true" selection-start-line="335" selection-start-column="27" selection-end-line="335" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#6;n#content#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#6;n#content#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#6;n#content#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
