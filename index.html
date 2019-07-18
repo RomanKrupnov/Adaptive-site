@@ -22,17 +22,17 @@
     <div class="header__logo">
         <a href="index.html"> <img src="img/logo.png" alt="logo"  class="header__logo_link"></a>
     </div>
-        <a href="#"> <img  class="header__menu" src="img/buter-menu.svg" alt="logo menu"></a>
+        <a href="#"><img  class="header__menu" src="img/buter-menu.svg" alt="logo menu"></a>
         <nav class="nav-main">
             <div class="header__nav">
             <ul class="header__list">
-                <li><a href="#" class="header__list_link">Главная</a></li>
-                <li><a href="#" class="header__list_link">Отзывы</a></li>
-                <li><a href="#" class="header__list_link">Гарантии</a></li>
-                <li><a href="#" class="header__list_link">Описание</a></li>
-                <li><a href="#" class="header__list_link">Партнёры</a></li>
-                <li><a href="#" class="header__list_link">Преимущества</a></li>
-                <li><a href="#" class="header__list_link">FAQ</a></li>
+                <li><a href="#" class="header__list_link active-menu">Главная</a></li>
+                <li><a href="#" class="header__list_link active-menu">Отзывы</a></li>
+                <li><a href="#" class="header__list_link active-menu">Гарантии</a></li>
+                <li><a href="#" class="header__list_link active-menu">Описание</a></li>
+                <li><a href="#" class="header__list_link active-menu">Партнёры</a></li>
+                <li><a href="#" class="header__list_link active-menu">Преимущества</a></li>
+                <li><a href="#" class="header__list_link active-menu">FAQ</a></li>
             </ul>
             </div>
         </nav>
@@ -87,7 +87,7 @@
             <li class="call-back__link"> <section> <h2 class="call-back__link_h2">хотите мы вам перезвоним?</h2> <p class="call-back__link_p">Закажите звонок, и менеджер вам всё расскажет и объяснит</p></section></li>
             <li class="call-back__link">
                 <form class="call-back__input-form">
-                    <input type="tel" max="15" class="call-back__input-form_tel" placeholder="Ваш телефон" required>
+                    <input type="tel" class="call-back__input-form_tel" placeholder="Ваш телефон" required>
                     <input type="submit" class="call-back__input-form_submit active-button" value="заказать звонок"></form></li>
         </ul>
     </div>
@@ -181,7 +181,7 @@
         <div class="guarantees__nav">
             <a href="#" class="active-slash angel hide"><i class="fas fa-angle-left"></i></a>
             <div class="guarantees__nav_slider">
-                <img src="img/icon-box.png" alt="box" class="guarantees__nav_img">
+                <img style=' background-image: url("img/icon-box.png");' src="img/img-box.svg" alt="box" class="guarantees__nav_img">
                 <h4 class="guarantees__nav_h4">Страховка отправлений</h4>
             </div>
             <a href="#" class="active-slash angel hide"><i class="fas fa-angle-right"></i></a>
@@ -195,7 +195,7 @@
         </div>
         <div class="guarantees__block marg">
         <div class="guarantees__nav_slider flash">
-    <img src="img/icon-eys.png" alt="box" class="guarantees__nav_img flash">
+    <img style=' background-image: url("img/icon-box.png");' src="img/img-eyes.svg" alt="box" class="guarantees__nav_img flash">
     <h4 class="guarantees__nav_h4 flash">Прозрачность расчетов</h4>
 </div>
 
@@ -208,7 +208,7 @@
     </div></div>
         <div class="guarantees__block">
     <div class="guarantees__nav_slider flash">
-        <img src="img/icon-post.png" alt="post" class="guarantees__nav_img flash">
+        <img style=' background-image: url("img/icon-box.png");' src="img/img-delivery.svg" alt="post" class="guarantees__nav_img flash">
         <h4 class="guarantees__nav_h4 flash">Лучшие поставщики</h4>
     </div>
 
@@ -299,8 +299,54 @@
 
 
     </div>
+    <div class="call-back-footer">
+        <div class="call-back-footer__border">
+    <section>
+        <h3 class="call-back-footer__h3">ОСТАЛИСЬ ВОПРОСЫ?</h3>
+    </section>
+            <form class="call-back-footer__input-form">
+                <input type="tel" class="call-back-footer__input-form_tel" placeholder="Ваш телефон" required>
+                <input type="submit" class="call-back-footer__input-form_submit active-button" value="заказать звонок"></form>
+    </div>
+
+    </div>
 </content>
-<footer></footer>
+<footer class="main-footer">
+    <div class="footer">
+
+        <div class="footer__logo">
+            <a href="index.html"> <img src="img/logo-grey-mini.png" alt="logo"  class="footer__logo_link"></a>
+        </div>
+        <a href="#"> <img  class="footer__menu" src="img/buter-grey.svg" alt="logo menu"></a>
+        <nav class="nav-main">
+            <div class="footer__nav">
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__list_link active-menu">Главная</a></li>
+                    <li><a href="#" class="footer__list_link active-menu">Отзывы</a></li>
+                    <li><a href="#" class="footer__list_link active-menu">Гарантии</a></li>
+                    <li><a href="#" class="footer__list_link active-menu">Описание</a></li>
+                    <li><a href="#" class="footer__list_link active-menu">Партнёры</a></li>
+                    <li><a href="#" class="footer__list_link active-menu">Преимущества</a></li>
+                    <li><a href="#" class="footer__list_link active-menu">FAQ</a></li>
+                </ul>
+        </div>
+        </nav>
+
+    </div>
+    <div class="copyright">
+        <div class="copyright__border">
+            <h4 class="copyright__h4">&copy; Все права защищены 2019 г.</h4>
+            <ul class="copyright__list flash ">
+                <li class="copyright__link zoom-img"><a href="#"><i class="fab fa-vk"></i></a></li>
+                <li class="copyright__link zoom-img"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="copyright__link zoom-img"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            </ul>
+            <h4 class="copyright__h4">Дизайн</h4>
+        </div>
+    </div>
+
+</footer>
+
 
 </body>
 </html>

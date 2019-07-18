@@ -5,6 +5,16 @@
 summary,details,input,text
   outline: 0
   outline-offset: 0
+details summary::-webkit-details-marker
+  display: none
+input::placeholder
+  color: black
+  font-size: 20px
+html,body
+  height: 100%
+.fab
+  line-height: 2 !important
+
 summary
   cursor: pointer
 a
@@ -12,9 +22,11 @@ a
   cursor: pointer
 .zoom-img:hover
   transform: scale(1.2)
+.active-menu:hover
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.45)
 
 .active-button:hover
-  box-shadow: 0px 4px 15px rgba(27, 170, 235, 0.45)
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.45)
 .container
   width: 278px
   margin: 0 auto
@@ -44,7 +56,7 @@ a
     display: flex
     &_link
       color: black
-      font-size: 0px
+      font-size: 0
       cursor: pointer
 .content
   &__section
@@ -207,16 +219,11 @@ a
     align-items: center
     margin: 0 auto
 
-
-  &__slash
-
 .reviews-block
   margin-left: 20px
-  margin-left: 20px
+  margin-right: 20px
   &__face
     display: flex
-
-    &_main
 
     &_img
       width: 87px
@@ -286,7 +293,6 @@ a
       text-align: center
       font-size: 10px
       line-height: 12px
-      text-align: center
       color: #000000
 
 .hide
@@ -311,8 +317,9 @@ a
       width: 48px
       height: 48px
       padding: 19px
-      background-color: #F7F7F7
-      border-radius: 50%
+      background-size: contain
+      background-repeat: no-repeat
+      align-items: center
 
     &_h4
       font-size: 16px
@@ -351,8 +358,6 @@ a
     padding-top: 20px
     margin-left: 20px
     margin-right: 20px
-  &__left
-  &__right
   &__list
     list-style-type: none
   &__link
@@ -368,8 +373,7 @@ a
     margin-bottom: 10px
     &_p
       margin-top: 10px
-details summary::-webkit-details-marker
-  display: none
+
 
 .delivery-company
   display: flex
@@ -378,16 +382,97 @@ details summary::-webkit-details-marker
   margin-top: 18px
   margin-bottom: 18px
 
-  &__all
 
   &__list
     list-style-type: none
     display: flex
   &__link
-    margin: 3px 0px
+    margin: 3px 0
     &_img
       width: 66px
       height: 42px
+.call-back-footer
+  background-color: #E9E9E9
+
+
+  &__h3
+    font-weight: 600
+    font-size: 18px
+    line-height: 22px
+    color: #000000
+    margin-bottom: 10px
+
+  &__input-form
+    padding-bottom: 36px
+    &_tel
+      border: 1px solid #363636
+      box-sizing: border-box
+      border-radius: 30px
+      font-size: 16px
+      line-height: 48px
+      color: black
+      background: #E9E9E9
+      width: 290px
+      height: 40px
+      padding-left: 10px
+      padding-right: 10px
+      margin-bottom: 10px
+    &_submit
+      font-size: 16px
+      line-height: 48px
+      text-align: center
+      text-transform: uppercase
+      color: #363636
+      width: 289px
+      height: 40px
+      border: none
+      background: #008DCD
+      border-radius: 30px
+      font-weight: 600
+      cursor: pointer
+.footer
+  height: 86px
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+
+  &__logo
+
+    &_link
+      width: 140px
+      height: 57px
+
+  &__menu
+    width: 40px
+    height: 33px
+    display: none
+    margin-right: -40px
+  &__list
+    list-style-type: none
+    display: flex
+    &_link
+      color: black
+      cursor: pointer
+.copyright
+  background-color: #E9E9E9
+  min-height: 50px
+  &__border
+    display: flex
+    margin-left:  15px
+    margin-right: 15px
+    justify-content: space-between
+    width: 289px
+    border-top: 1px solid #C4C4C4
+  &__h4
+    font-size: 10px
+    line-height: 12px
+    color: #000000
+    margin-top: 18px
+    padding-bottom: 18px
+
+
+
 
 
 
@@ -427,6 +512,22 @@ details summary::-webkit-details-marker
   .delivery-company
     margin-left: 20px
     margin-right: 20px
+  .call-back-footer
+    padding: 13px 20px 0 20px
+    &__input-form
+      border-bottom: 1px solid #C4C4C4
+  .footer
+    background-color: #E9E9E9
+    width: 91vw
+    padding-left: 15px
+    padding-right: 15px
+    &__menu
+      display: block
+    &__nav
+      display: none
+    &__list
+      &_link
+        font-size: 0
 
 
 
@@ -455,7 +556,7 @@ details summary::-webkit-details-marker
         line-height: 16.8px
         margin-right: 24px
         color: #fff
-    &__nav
+
     &__list
       width: 100%
       margin-top: 41px
@@ -515,8 +616,6 @@ details summary::-webkit-details-marker
     justify-content: space-between
   .step-block img
     width: 280px
-  .marg74
-    //margin-right: 54px
 
   .step-block
     margin-top: 34px
@@ -606,15 +705,13 @@ details summary::-webkit-details-marker
       margin: 0 auto
 
 
-    &__slash
+
 
   .reviews-block
     margin-left: 34px
     margin-right: 34px
     &__face
       display: flex
-
-      &_main
 
       &_img
         width: 87px
@@ -674,7 +771,6 @@ details summary::-webkit-details-marker
         text-align: center
         font-size: 6rem
         line-height: 14px
-        text-align: center
         color: #000000
   .guarantees
     padding: 47px 32px 47px 32px
@@ -690,7 +786,6 @@ details summary::-webkit-details-marker
 
 
     &__nav
-      &_slider
       &_img
         width: 48px
         height: 48px
@@ -713,7 +808,7 @@ details summary::-webkit-details-marker
         font-size: 16px
         line-height: 48px
   .marg
-    margin: 0px 20px 0px 20px
+    margin: 0 20px 0 20px
   .fast-answer
     padding-bottom: 39px
 
@@ -726,8 +821,6 @@ details summary::-webkit-details-marker
     &__block
       margin-left: 35px
       margin-right: 35px
-    &__left
-    &__right
     &__list
       list-style-type: none
     &__link
@@ -753,16 +846,127 @@ details summary::-webkit-details-marker
       list-style-type: none
       display: flex
     &__link
-      margin: 3px 0px
+      margin: 3px 0
       &_img
         width: 66px
         height: 42px
+  .call-back-footer
+    display: flex
+    padding: 33px 24px 0 24px
+
+    &__border
+      display: flex
+      justify-content: space-between
+      width: 700px
+      border-bottom: 1px solid #C4C4C4
+
+    &__h3
+      font-weight: 600
+      font-size: 10rem
+      line-height: 24px
+      margin-top: 10px
+
+
+    &__input-form
+      display: flex
+      &_tel
+        border-radius: 30px
+        font-size: 16px
+        line-height: 48px
+        width: 220px
+        height: 48px
+        padding-left: 10px
+        padding-right: 10px
+        margin-left: 10px
+        margin-right: 10px
+
+      &_submit
+        font-size: 16px
+        line-height: 19px
+        width: 220px
+        height: 49px
+        margin-left: 10px
+        margin-right: 10px
+  .main-footer
+    background-color: #E9E9E9
+    width: 100vw
+
+  .footer
+    width: 90.7vw
+    height: 79px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    background-color: #E9E9E9
+    padding-left: 27px
+    padding-right: 35px
+    &__list
+      &_link
+        font-size: 7rem
+        line-height: 17px
+        margin: 0 11px
+    &__nav
+      display: block
+    &__logo
+      &_link
+        width: 140px
+        height: 57px
+  .copyright
+    background-color: #E9E9E9
+    min-height: 50px
+    &__border
+      margin: 0 auto
+      width: 90vw
+      border-top: 1px solid #C4C4C4
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__h4
+      font-size: 10px
+      line-height: 12px
+      color: #000000
+      margin-top: 18px
+      padding-bottom: 18px
+
+
+
+    &__h4
+      font-size: 8rem
+      line-height: 19px
+      margin-top: 18px
+      padding-bottom: 18px
+    &__list
+      list-style-type: none
+      display: flex
+      text-align: center
+      margin-top: 19px
+      margin-bottom: 23px
+    &__link
+      font-size: 20px
+      font-weight: 600
+      padding-top: 10px
+      margin-left: 15px
+      margin-right: 15px
+      transition: 0.5s
+
+  .fab
+    background-color: #008DCD
+    width: 40px
+    height: 40px
+    color: white
+    border-radius: 50%
+    line-height: 2
+
+
+
 
 
 
 @media screen and (min-width: 770px) and (max-width: 1440px)
   .container
-    width: 100vw
+    width: 1160px
+    margin: 0 auto
+
   html
     font-size: 2px
   .nav-main
@@ -788,8 +992,6 @@ details summary::-webkit-details-marker
         line-height: 16.8px
         margin-right: 24px
         color: #fff
-    &__nav
-
     &__list
       width: 100%
       margin-top: 41px
@@ -828,6 +1030,7 @@ details summary::-webkit-details-marker
         width: 360px
         text-align: center
         text-transform: uppercase
+        transition: 0.5s
 
   .delivery
     margin-top: 25px
@@ -870,8 +1073,6 @@ details summary::-webkit-details-marker
 
   .step-block img
     width: 462px
-  .marg74
-    //margin-right: 204px
 
   .step-block
     margin-top: 18px
@@ -949,6 +1150,7 @@ details summary::-webkit-details-marker
         font-weight: 600
         cursor: pointer
         margin-bottom: 10px
+        transition: 0.5s
 
   .reviews
     padding-left: 140px
@@ -968,18 +1170,11 @@ details summary::-webkit-details-marker
       display: flex
       align-items: center
       margin: 0 auto
-
-
-    &__slash
-
   .reviews-block
     margin-left: 80px
     margin-right: 80px
     &__face
       display: flex
-
-      &_main
-
       &_img
         width: 119px
         height: 119px
@@ -1041,7 +1236,6 @@ details summary::-webkit-details-marker
         text-align: center
         font-size: 9rem
         line-height: 22px
-        text-align: center
         color: #000000
   .guarantees
     padding: 21vh 9vw 20vh 9vw
@@ -1057,14 +1251,14 @@ details summary::-webkit-details-marker
 
 
     &__nav
-      &_slider
       &_img
         width: 75px
         height: 70px
         padding: 19px
       &_h4
         font-size: 15rem
-        line-height: 36px
+        line-height: 10vh
+        height: 17vh
     &__content
 
       &_p
@@ -1074,12 +1268,13 @@ details summary::-webkit-details-marker
         margin-bottom: 31px
         height: 41rem
       &_button
-        width: 360px
+        width: 27vw
         height: 48px
         font-size: 8rem
         line-height: 48px
+        transition: 0.5s
   .marg
-    margin: 0px 40px 0px 40px
+    margin: 0 40px 0 40px
   .fast-answer
     padding-bottom: 44px
 
@@ -1115,6 +1310,7 @@ details summary::-webkit-details-marker
       padding: 9px 25px
       margin-top: 10px
       margin-bottom: 10px
+      transition: 0.5s
       &_p
         margin-top: 20px
   .delivery-company
@@ -1129,12 +1325,107 @@ details summary::-webkit-details-marker
       list-style-type: none
       display: flex
     &__link
-      margin: 3px 0px
+      margin: 3px 0
       &_img
         margin-left: 16px
         margin-right: 16px
         width: 94px
         height: 60px
+        transition: 0.5s
+
+  .call-back-footer
+    display: flex
+    padding: 48px 147px 28px 147px
+
+    &__border
+      display: flex
+      justify-content: space-between
+      width: 80vw
+      border-bottom: 1px solid #C4C4C4
+
+    &__h3
+      font-weight: 600
+      font-size: 15rem
+      line-height: 36px
+      margin-top: 6px
+
+
+    &__input-form
+      display: flex
+      &_tel
+        border-radius: 30px
+        font-size: 8rem
+        line-height: 48px
+        width: 322px
+        height: 48px
+        padding-left: 10px
+        padding-right: 10px
+        margin-left: 10px
+        margin-right: 10px
+
+      &_submit
+        font-size: 8rem
+        line-height: 19px
+        width: 322px
+        height: 49px
+        transition: 0.5s
+  .main-footer
+    background-color: #E9E9E9
+    width: 100vw
+  .footer
+    width: 80vw
+    height: 93px
+    display: flex
+    margin: 0 auto
+    &__list
+      &_link
+        font-size: 9rem
+        line-height: 11rem
+        margin: 0 2vw
+    &__nav
+      display: block
+
+    &__logo
+      &_link
+        width: 160px
+        height: 50px
+  .copyright
+    background-color: #E9E9E9
+    min-height: 50px
+
+    &__border
+      margin: 0 auto
+      width: 80vw
+      border-top: 1px solid #C4C4C4
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__h4
+      font-size: 8rem
+      line-height: 19px
+      margin-top: 18px
+      padding-bottom: 18px
+    &__list
+      list-style-type: none
+      display: flex
+      text-align: center
+      margin-top: 19px
+      margin-bottom: 23px
+    &__link
+      font-size: 20px
+      font-weight: 600
+      padding-top: 10px
+      margin-left: 15px
+      margin-right: 15px
+      transition: 0.5s
+
+  .fab
+    background-color: #008DCD
+    width: 40px
+    height: 40px
+    color: white
+    border-radius: 50%
+    line-height: 2
 
 
 @media screen and (min-width: 1441px)
@@ -1167,7 +1458,6 @@ details summary::-webkit-details-marker
         line-height: 16.8px
         margin-right: 24px
         color: #fff
-    &__nav
 
     &__list
       width: 100%
@@ -1207,6 +1497,7 @@ details summary::-webkit-details-marker
         width: 360px
         text-align: center
         text-transform: uppercase
+        transition: 0.5s
 
   .delivery
     margin-top: 25px
@@ -1235,7 +1526,6 @@ details summary::-webkit-details-marker
       color: #000000
       width: 280px
   .step
-    .step
     margin: 68px 7% 36px
     display: flex
     flex-wrap: wrap
@@ -1244,9 +1534,6 @@ details summary::-webkit-details-marker
     width: 462px
   .step-block img
     width: 462px
-  .marg74
-    //margin-right: 204px
-
   .step-block
     margin-top: 18px
     margin-bottom: 18px
@@ -1323,6 +1610,7 @@ details summary::-webkit-details-marker
         font-weight: 600
         cursor: pointer
         margin-bottom: 10px
+        transition: 0.5s
   .reviews
     padding-left: 140px
     padding-right: 140px
@@ -1358,8 +1646,6 @@ details summary::-webkit-details-marker
     margin-right: 80px
     &__face
       display: flex
-
-      &_main
 
       &_img
         width: 119px
@@ -1422,7 +1708,6 @@ details summary::-webkit-details-marker
         text-align: center
         font-size: 9rem
         line-height: 22px
-        text-align: center
         color: #000000
   .guarantees
     padding: 21vh 9vw 20vh 9vw
@@ -1438,7 +1723,6 @@ details summary::-webkit-details-marker
 
 
     &__nav
-      &_slider
       &_img
         width: 75px
         height: 70px
@@ -1459,8 +1743,9 @@ details summary::-webkit-details-marker
         height: 48px
         font-size: 8rem
         line-height: 48px
+        transition: 0.5s
   .marg
-    margin: 0px 40px 0px 40px
+    margin: 0 40px 0 40px
   .fast-answer
     padding-bottom: 44px
     &__header
@@ -1495,6 +1780,7 @@ details summary::-webkit-details-marker
       padding: 9px 25px
       margin-top: 10px
       margin-bottom: 10px
+      transition: 0.5s
       &_p
         margin-top: 20px
   .delivery-company
@@ -1509,13 +1795,109 @@ details summary::-webkit-details-marker
       list-style-type: none
       display: flex
     &__link
-      margin: 3px 0px
+      margin: 3px 0
+
       &_img
         margin-left: 16px
         margin-right: 16px
         width: 94px
         height: 60px
+        transition: 0.5s
 
+  .call-back-footer
+    display: flex
+    padding: 48px 147px 28px 147px
+
+    &__border
+      display: flex
+      justify-content: space-between
+      width: 80vw
+      border-bottom: 1px solid #C4C4C4
+
+    &__h3
+      font-weight: 600
+      font-size: 15rem
+      line-height: 36px
+      margin-top: 6px
+
+
+    &__input-form
+      display: flex
+      &_tel
+        border-radius: 30px
+        font-size: 8rem
+        line-height: 48px
+        width: 322px
+        height: 48px
+        padding-left: 10px
+        padding-right: 10px
+        margin-left: 10px
+        margin-right: 10px
+
+      &_submit
+        font-size: 8rem
+        line-height: 19px
+        width: 322px
+        height: 49px
+        transition: 0.5s
+  .main-footer
+    background-color: #E9E9E9
+    width: 100vw
+  .footer
+    width: 80vw
+    height: 93px
+    display: flex
+    margin: 0 auto
+    &__list
+      &_link
+        font-size: 9rem
+        line-height: 11rem
+        margin: 0 2vw
+    &__nav
+      display: block
+
+    &__logo
+      &_link
+        width: 160px
+        height: 50px
+
+  .copyright
+    background-color: #E9E9E9
+    min-height: 62px
+
+    &__border
+      margin: 0 auto
+      width: 80vw
+      border-top: 1px solid #C4C4C4
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__h4
+      font-size: 8rem
+      line-height: 19px
+      margin-top: 18px
+      padding-bottom: 18px
+    &__list
+      list-style-type: none
+      display: flex
+      text-align: center
+      margin-top: 19px
+      margin-bottom: 23px
+    &__link
+      font-size: 20px
+      font-weight: 600
+      padding-top: 10px
+      margin-left: 15px
+      margin-right: 15px
+      transition: 0.5s
+
+  .fab
+    background-color: #008DCD
+    width: 40px
+    height: 40px
+    color: white
+    border-radius: 50%
+    line-height: 2
 
 
 

@@ -20,13 +20,13 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="399">
-                  <caret line="287" column="113" selection-start-line="287" selection-start-column="113" selection-end-line="287" selection-end-column="113" />
-                  <caret line="288" column="113" selection-start-line="288" selection-start-column="113" selection-end-line="288" selection-end-column="113" />
-                  <caret line="289" column="113" selection-start-line="289" selection-start-column="113" selection-end-line="289" selection-end-column="113" />
-                  <caret line="292" column="113" selection-start-line="292" selection-start-column="113" selection-end-line="292" selection-end-column="113" />
-                  <caret line="293" column="113" selection-start-line="293" selection-start-column="113" selection-end-line="293" selection-end-column="113" />
-                  <caret line="294" column="113" selection-start-line="294" selection-start-column="113" selection-end-line="294" selection-end-column="113" />
+                <state relative-caret-position="382">
+                  <caret line="335" column="27" lean-forward="true" selection-start-line="335" selection-start-column="27" selection-end-line="335" selection-end-column="27" />
+                  <folding>
+                    <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#6;n#content#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#6;n#content#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#6;n#content#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -38,8 +38,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="158">
-                  <caret line="1497" column="9" lean-forward="true" selection-start-line="1497" selection-start-column="9" selection-end-line="1497" selection-end-column="9" />
+                <state relative-caret-position="302">
+                  <caret line="915" column="20" lean-forward="true" selection-start-line="915" selection-start-column="20" selection-end-line="915" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#25649#34353#0" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -55,6 +58,14 @@
       <find>141</find>
       <find>nav</find>
       <find>margin-left: 20px</find>
+      <find>_tel</find>
+      <find>border-bottom</find>
+      <find>nav-main</find>
+      <find>заказать</find>
+      <find>angel</find>
+      <find>отправить по</find>
+      <find>button</find>
+      <find>num</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -125,11 +136,13 @@
       <workItem from="1563282612838" duration="21996000" />
       <workItem from="1563342738021" duration="21315000" />
       <workItem from="1563370793471" duration="743000" />
+      <workItem from="1563372392831" duration="8506000" />
+      <workItem from="1563431732791" duration="13203000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89522000" />
+    <option name="totallyTimeSpent" value="111231000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -166,22 +179,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/style.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="287" column="113" selection-start-line="287" selection-start-column="113" selection-end-line="287" selection-end-column="113" />
-          <caret line="288" column="113" selection-start-line="288" selection-start-column="113" selection-end-line="288" selection-end-column="113" />
-          <caret line="289" column="113" selection-start-line="289" selection-start-column="113" selection-end-line="289" selection-end-column="113" />
-          <caret line="292" column="113" selection-start-line="292" selection-start-column="113" selection-end-line="292" selection-end-column="113" />
-          <caret line="293" column="113" selection-start-line="293" selection-start-column="113" selection-end-line="293" selection-end-column="113" />
-          <caret line="294" column="113" selection-start-line="294" selection-start-column="113" selection-end-line="294" selection-end-column="113" />
+        <state relative-caret-position="302">
+          <caret line="915" column="20" lean-forward="true" selection-start-line="915" selection-start-column="20" selection-end-line="915" selection-end-column="20" />
+          <folding>
+            <element signature="e#25649#34353#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.sass">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="1497" column="9" lean-forward="true" selection-start-line="1497" selection-start-column="9" selection-end-line="1497" selection-end-column="9" />
+        <state relative-caret-position="382">
+          <caret line="335" column="27" lean-forward="true" selection-start-line="335" selection-start-column="27" selection-end-line="335" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#6;n#content#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#6;n#content#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#6;n#content#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
